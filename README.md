@@ -20,7 +20,7 @@ This file contains the function for performing the necessary operations on the o
 #### STEP 2: 
 3. After that, using grep, columns related to mean and standard deviation are selected.
 
-###3 STEP 3: 
+#### STEP 3: 
 4. Activity and subject related data frames are column binded to the resultant data frame 
 
 #### STEP 4:
