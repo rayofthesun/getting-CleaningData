@@ -1,15 +1,15 @@
 run_Analysis <- function(){
   #reading files into data frame
-  x_trainDF <- read.csv("train//X_train.txt", sep = "", header = FALSE)
-  y_trainDF <- read.csv("train//y_train.txt", sep = "", header = FALSE)
-  subject_trainDF <- read.csv("train//subject_train.txt", sep = "", header = FALSE) 
+  x_trainDF <- read.csv("UCI HAR Dataset//train//X_train.txt", sep = "", header = FALSE)
+  y_trainDF <- read.csv("UCI HAR Dataset//train//y_train.txt", sep = "", header = FALSE)
+  subject_trainDF <- read.csv("UCI HAR Dataset//train//subject_train.txt", sep = "", header = FALSE) 
   
-  x_testDF <- read.csv("test//X_test.txt", sep = "", header = FALSE)
-  y_testDF <- read.csv("test//y_test.txt", sep = "", header = FALSE)
-  subject_testDF <- read.csv("test//subject_test.txt", sep = "", header = FALSE) 
+  x_testDF <- read.csv("UCI HAR Dataset//test//X_test.txt", sep = "", header = FALSE)
+  y_testDF <- read.csv("UCI HAR Dataset//test//y_test.txt", sep = "", header = FALSE)
+  subject_testDF <- read.csv("UCI HAR Dataset//test//subject_test.txt", sep = "", header = FALSE) 
   
-  featuresDF <- read.csv("features.txt", sep = "", header = FALSE)
-  activityLabelsDF <- read.csv("activity_labels.txt", sep="", header = FALSE)
+  featuresDF <- read.csv("UCI HAR Dataset//features.txt", sep = "", header = FALSE)
+  activityLabelsDF <- read.csv("UCI HAR Dataset//activity_labels.txt", sep="", header = FALSE)
   
   #binding and test data frames
   
