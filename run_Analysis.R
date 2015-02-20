@@ -1,5 +1,6 @@
 run_Analysis <- function(){
   #reading files into data frame
+  
   x_trainDF <- read.csv("UCI HAR Dataset//train//X_train.txt", sep = "", header = FALSE)
   y_trainDF <- read.csv("UCI HAR Dataset//train//y_train.txt", sep = "", header = FALSE)
   subject_trainDF <- read.csv("UCI HAR Dataset//train//subject_train.txt", sep = "", header = FALSE) 
@@ -52,5 +53,6 @@ run_Analysis <- function(){
   resultTemp <- x_trainTestDF_Subset_ActivityAvg %>%
     group_by(subject, ActivityName) %>%
     summarise_each(funs(mean), 1:66)
-
+  
+  resultTemp
 }
