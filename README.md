@@ -16,6 +16,7 @@ This file contains the function for performing the necessary operations on the o
 1. All the relevant files are read using read.csv into separate data frames
 2. The training and testing data are read into Data Frames and then row binded (for X_ Y_ , and subject related files separtely). 
 2. Then, I selected column names from features data frame, and used them to name the columns of already binded data set.
+3. Resultant Dimension : 10299 rows and 561 columns
 
 #### STEP 2: 
 3. After that, using grep, columns related to mean and standard deviation are selected.
@@ -26,8 +27,10 @@ This file contains the function for performing the necessary operations on the o
 #### STEP 4:
 
 5. Now, for getting the activity names, the previous data frame is "merged" with the data containing activity names
+6. Resultant dimensions: 10299 rows and 68 columns
 
 #### STEP 5:
 6. Independent tidy data set is obtained from the data set in step 4, by averaging each activity and each subject. For this, group_by and summarise_each functions are used.
+7. The resultant data has the dimensions : 180 rows and 68 columns (including each column for subject and activity Name)
 
 
