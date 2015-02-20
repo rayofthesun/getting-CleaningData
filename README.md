@@ -1,6 +1,6 @@
 # getting-CleaningData
 ### Files Included:
-This repo contains files- run_Analysis.R, README, and a codeBook.
+This repo contains files- run_Analysis.R, README.md, and a codeBook.md.
 
 #### README.md
   This file contains the description of different files and the approach used for solving the project.
